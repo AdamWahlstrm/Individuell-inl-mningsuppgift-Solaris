@@ -1,0 +1,206 @@
+/* Headers */
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin: 0;
+    margin-right: 100px;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+}
+
+h6 {
+    color: yellow ;
+    font-size: 25px;
+}
+
+
+ /* BODY */
+
+ Body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 75vh;
+    background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+    
+}
+
+body .First{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: color #e5e5e5; 
+    background-image: linear-gradient(to right, rgb(32, 32, 86) , rgb(1, 1, 35));
+}
+body .First .planets{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+    min-width: 1500px;
+    margin-left: 9rem;
+}
+body .Second{
+    flex: 1;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    font-family:'Roboto Condensed', sans-serif;
+    max-width: 600px;
+    min-height: 300px;
+}
+aside{
+    border-top:solid;
+    border-bottom: solid;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    line-height: 1.5;
+
+
+
+
+
+/* Planeter och Sol */
+}
+.fromSun{
+    grid-column: 4 /span 6;
+}
+.minTemp{
+    grid-column: 4 /span 6;
+    grid-template-rows: 2;
+}
+.moons{
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#Solis{
+    position: fixed;
+    width: 1270px;
+    height: 1270px;
+    left: -1150px;
+    top: -183px;
+    border-radius: 50%;
+    background: #FFD029;
+    box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
+}
+#Mercurialis{
+    width: 14px;
+    height: 14px;
+    background: #888888;
+    border-radius: 50%;
+}
+#venus{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #E7CDCD;    
+}
+#Tellus{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #428ED5;
+}
+#Mars{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #EF5F5F;
+}
+#Lovis{
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    background: #E29468;
+}
+#Sarturnus{
+    width: 152px;
+    height: 152px; 
+    border-radius: 50%;
+    background: #C7AA72;
+}
+
+#Uranus{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #C9D4F1;
+}
+#Neptunus{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #7A91A7;
+}
+.blueSun{
+    border-radius: 50%;
+    position: absolute;
+    width: 1278px;
+    height: 1278px;
+    left: -1160px;
+    top: -189px;
+    background:rgb(56, 159, 223);
+    box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
+    opacity: 0.5;
+}
+.blueSunLight{
+    position: absolute;
+    width: 1350px;
+    height: 1350px;
+    left: -1132px;
+    top: -218px;
+    background: rgba(66, 142, 213, 0.1);
+    border-radius: 50%;
+}
+.blueSunLighter{
+    position: absolute;
+    width: 1400px;
+    height: 1400px;
+    left: -1180px;
+    top: -250px;
+    border-radius: 50%;
+    background: rgba(66, 142, 213, 0.06);
+}
+
+
+
+/* Knappar */
+
+button{
+    padding: 0.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: cyan;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttonBack{
+    align-self: flex-start;
+}
